@@ -36,7 +36,14 @@ import skimage.draw
 import cv2
 from mrcnn.visualize import display_instances
 import matplotlib.pyplot as plt
-from collections.abc import Iterable
+import collections.abc
+#hyper needs the four following aliases to be done manually.
+collections.Iterable = collections.abc.Iterable
+collections.Mapping = collections.abc.Mapping
+collections.MutableSet = collections.abc.MutableSet
+collections.MutableMapping = collections.abc.MutableMapping
+#Now import hyper
+import hyper
 
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")
