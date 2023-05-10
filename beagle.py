@@ -36,6 +36,7 @@ import skimage.draw
 import cv2
 from mrcnn.visualize import display_instances
 import matplotlib.pyplot as plt
+from collections.abc import Iterable
 
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")
